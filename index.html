@@ -18,6 +18,7 @@ body {
 <body>
 <div id='map'></div>
 <script>
+/*
 var map = new ol.Map({
   target: 'map',
   layers: [
@@ -27,6 +28,11 @@ var map = new ol.Map({
     center: ol.proj.fromLonLat([37.41, 8.82]),
     zoom: 4
   })
+})
+*/
+olms('map', 'https://hfu.github.com/hfu/onyx-tapioca/style.json')
+.then(function(map) {
+  console.log(map)
 })
 </script>
 </body>
